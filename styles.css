@@ -25,6 +25,8 @@ body {
     background-image: url("img/Background.png"); /* Insere uma imagem de fundo - html deve ser usado para imagens com sentindo, e imagens css devem ser usadas para decoração (sem ter muito sentindo para o usuário)*/
     background-repeat: no-repeat; /* Faz com que a imagem não repita mais de um vez */
     background-size: contain; /* Preenche todo o container, que seria a section, no caso. */
+    align-items: center; /* Alinha os itens ao centro da coluna */
+    text-align: center; /* Alinha todos os itens, além do texto, ao centro horizontalmente */
 }
 
 .container {
@@ -33,9 +35,17 @@ body {
     grid-template-columns: 50% 50%; /* Por padrão o grid trabalha em linhas, porém voce consegue trabalhar utilizando colunas */
 }
 
+.container__caixa {
+    margin: 0 6em; /* O primeiro valor representa margem acima e abaixo, enquanto o segundo valor representa a direita e a esquerda */
+}
+
 .container__titulo {
     font-size: 28px;
     font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* Topo, direita, baixo e esquerda*/
 }
 
 .container__botao {
@@ -45,6 +55,7 @@ body {
     color: var(--branco-principal);
     display: block; /* Define o display como do tipo block o qual faz o elemento ocupar seu espaço de bloco todo */ 
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
 .botao_secundario {
