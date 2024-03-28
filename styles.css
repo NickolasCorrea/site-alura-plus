@@ -1,0 +1,58 @@
+
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --fonte-principal: 'Inter'; /* Você pode preencher com valores além de cores */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png"); /* Insere uma imagem de fundo - html deve ser usado para imagens com sentindo, e imagens css devem ser usadas para decoração (sem ter muito sentindo para o usuário)*/
+    background-repeat: no-repeat; /* Faz com que a imagem não repita mais de um vez */
+    background-size: contain; /* Preenche todo o container, que seria a section, no caso. */
+}
+
+.container {
+    height: 100vh;
+    display: grid; /* Define o display como do tipo grid */ 
+    grid-template-columns: 50% 50%; /* Por padrão o grid trabalha em linhas, porém voce consegue trabalhar utilizando colunas */
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block; /* Define o display como do tipo block o qual faz o elemento ocupar seu espaço de bloco todo */ 
+    text-decoration: none;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
