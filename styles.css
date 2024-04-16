@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 100vh; /*Define a altura do container com relação a altura máxima do viewport*/
     display: grid; /* Define o display como do tipo grid */ 
     grid-template-columns: 50% 50%; /* Por padrão o grid trabalha em linhas, porém voce consegue trabalhar utilizando colunas */
 }
@@ -66,4 +66,33 @@ body {
 .container__aviso {
     font-size: 12px;
     color: var(--cinza-secundario);
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block; /* */
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
 }
